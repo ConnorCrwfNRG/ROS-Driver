@@ -3,11 +3,17 @@ baud : 115200
 
 frequencyH : 50   #higher frequency (value is in ms)
 
+diff_drive_mode: true
+wheel_circumference: 0.6594 # [m]
+track_width: .6223 # [m]
+max_rpm: 100 # [rpm]
+encoder_resolution: 1024
+
 queryH:
  motor_amps : ?A 
  motor_command : ?M
- hall_count : ?Cb
- hall_speed : ?BS
+ encoder_count : ?C
+ encoder_speed : ?S 
  volts : ?V
  feedback : ?F 
  battery_amps : ?BA

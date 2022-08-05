@@ -195,6 +195,15 @@ target_link_libraries(diff_odom
   ${catkin_LIBRARIES}
 )
 
+add_executable(diff_odom_node
+ src/diff_odom_node.cpp)
+
+ add_dependencies(diff_odom_node  roboteq_motor_controller_driver_generate_messages_cpp)
+
+target_link_libraries(diff_odom_node
+  ${catkin_LIBRARIES}
+)
+
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
